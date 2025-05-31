@@ -22,8 +22,7 @@
       gap: 32px;
       grid-template-areas:
         "header header header"
-        "intro portrait introduction"
-        "introduction introduction contact"
+        "intro portrait about"
         "work work contact"
         "socials socials socials";
     }
@@ -109,9 +108,9 @@
       object-fit: cover;
       display: block;
     }
-    /* INTRODUCTION (ABOUT) */
-    .introduction {
-      grid-area: introduction;
+    /* ABOUT */
+    .about {
+      grid-area: about;
       background: #FADCD9;
       border-radius: 20px;
       padding: 40px 32px;
@@ -121,13 +120,13 @@
       justify-content: flex-end;
       position: relative;
     }
-    .introduction-text {
+    .about-text {
       font-size: 1.1rem;
       font-weight: 300;
       color: #000;
       margin-bottom: 16px;
     }
-    .introduction-circle {
+    .about-circle {
       position: absolute;
       top: 32px;
       left: 32px;
@@ -217,7 +216,7 @@
         grid-template-areas:
           "header header"
           "intro portrait"
-          "introduction work"
+          "about work"
           "contact socials";
       }
     }
@@ -228,12 +227,12 @@
           "header"
           "intro"
           "portrait"
-          "introduction"
+          "about"
           "work"
           "contact"
           "socials";
       }
-      .header, .intro, .portrait, .introduction, .work, .contact, .socials {
+      .header, .intro, .portrait, .about, .work, .contact, .socials {
         min-width: 0;
       }
     }
@@ -246,7 +245,7 @@
       <div class="logo">Seoyoon Kim</div>
       <nav class="nav-links">
         <a href="#work" class="nav-link">Projects</a>
-        <a href="#introduction" class="nav-link">Introduction</a>
+        <a href="#about" class="nav-link">About</a>
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
     </header>
@@ -265,10 +264,10 @@
     <section class="portrait">
       <img class="portrait-img" src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=facearea&w=400&h=600&q=80" alt="Portrait">
     </section>
-    <!-- INTRODUCTION (ABOUT) -->
-    <section class="introduction" id="introduction">
-      <div class="introduction-circle"></div>
-      <div class="introduction-text">
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="about-circle"></div>
+      <div class="about-text">
         Seoyoon Kim is an innovative AI artist, renowned for blending cutting-edge technology with creative expression. Based in Seoul, she crafts unique digital art experiences accessible globally.
       </div>
     </section>
